@@ -4,3 +4,27 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# Template engine
+zip = { version = "2", features = ["deflate"] }
+quick-xml = "0.37"
+
+# CLI
+clap = { version = "4", features = ["derive"] }
+dialoguer = "0.11"
+
+# Parseo
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+
+# Networking (Gemini API)
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+
+# JSON
+serde_json = "1"
+
+# Utilidades
+thiserror = "2"
+dotenvy = "0.15"
+glob = "0.3"
+dirs = "6"
+regex = "1"
